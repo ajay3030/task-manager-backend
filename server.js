@@ -61,7 +61,7 @@ app.use('/auth', authRoutes);
 app.use('/tasks', taskRoutes);
 
 // Handle undefined routes
-app.all('*', (req, res) => {
+app.use('/', (req, res) => {
   res.status(404).json({
     error: `Route ${req.originalUrl} not found`
   });
