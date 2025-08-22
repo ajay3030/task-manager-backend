@@ -34,6 +34,8 @@ Create a `.env` file in the root directory with the following variables:
 MONGODB_URI=mongodb://localhost:27017/taskmanager
 JWT_SECRET=your_secret_key
 PORT=3000
+JWT_EXPIRE=24h
+NODE_ENV=development
 ```
 
 **3. Run the server:**
